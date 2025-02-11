@@ -1,0 +1,335 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\POC\\SupportTicketAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\repositories\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:repositories\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:repositories\\ticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\dto\\ticketcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:dto\\ticketcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\supportticketapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:supportticketapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\migrations\\20250210105929_addindcreatedatincomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:migrations\\20250210105929_addindcreatedatincomments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|c:\\project\\poc\\supportticketapi\\migrations\\20250210102427_addingforegnkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6921BE78-2516-4872-8C16-93EA53838AD2}|SupportTicketAPI.csproj|solutionrelative:migrations\\20250210102427_addingforegnkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:26:37.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\Comment.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Models\\Comment.cs",
+              "RelativeToolTip": "Models\\Comment.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:51:20.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\TicketController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketController.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\TicketController.cs*",
+              "RelativeToolTip": "Controllers\\TicketController.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:35:09.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TicketRepository.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\TicketRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TicketRepository.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\TicketRepository.cs*",
+              "RelativeToolTip": "Repositories\\TicketRepository.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:08:54.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ITicketRepository.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\ITicketRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ITicketRepository.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\ITicketRepository.cs*",
+              "RelativeToolTip": "Repositories\\ITicketRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:07:20.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "Models\\Ticket.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Models\\Ticket.cs",
+              "RelativeToolTip": "Models\\Ticket.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:50:38.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:40:03.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "Models\\Status.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Models\\Status.cs",
+              "RelativeToolTip": "Models\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:58:13.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:27:55.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TicketCommentDTO.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Dto\\TicketCommentDTO.cs",
+              "RelativeDocumentMoniker": "Dto\\TicketCommentDTO.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Dto\\TicketCommentDTO.cs",
+              "RelativeToolTip": "Dto\\TicketCommentDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:09:44.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:49:59.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SupportTicketAPI.csproj",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\SupportTicketAPI.csproj",
+              "RelativeDocumentMoniker": "SupportTicketAPI.csproj",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\SupportTicketAPI.csproj",
+              "RelativeToolTip": "SupportTicketAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T09:29:53.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20250210105929_addindCreatedAtinComments.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Migrations\\20250210105929_addindCreatedAtinComments.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250210105929_addindCreatedAtinComments.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Migrations\\20250210105929_addindCreatedAtinComments.cs",
+              "RelativeToolTip": "Migrations\\20250210105929_addindCreatedAtinComments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:59:29.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:39:17.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:33:51.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250210102427_addingForegnKey.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Migrations\\20250210102427_addingForegnKey.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250210102427_addingForegnKey.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Migrations\\20250210102427_addingForegnKey.cs",
+              "RelativeToolTip": "Migrations\\20250210102427_addingForegnKey.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:24:27.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "Controllers\\StatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:34:44.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:35:51.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Project\\POC\\SupportTicketAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Project\\POC\\SupportTicketAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-10T09:43:12.308Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

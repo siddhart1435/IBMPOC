@@ -25,10 +25,10 @@ namespace SupportTicketAPI.Controllers
         }
 
         // GET api/<LoginController>/5
-        [HttpGet("{id}")]
-        public ActionResult<User> Get(int id)
+        [HttpGet("{email}")]
+        public ActionResult<User> Get(string email)
         {
-            User user = _userRepository.GetUserById(id);
+            User user = _userRepository.GetUserById(email);
             if (user != null)
             {
                 return user;

@@ -4,7 +4,7 @@ namespace SupportTicketAPI.Repositories
 {
     public interface IUserRepository
     {
-        public User GetUserById(int id);
+        public User GetUserById(string email);
         
     }
 }

@@ -11,7 +11,7 @@ namespace SupportTicketAPI.Repositories
         {
             _context = context;
         }
-        public User? GetUserById(int id) => _context.Users.FirstOrDefault(usr => usr.UserId == id);
+        public User? GetUserById(string email) => _context.Users.FirstOrDefault(usr => usr.Email == email);
 
         
 

@@ -23,9 +23,9 @@ namespace SupportTicketAPI.Controllers
 
         // GET: api/<TicketController>
         [HttpGet]
-        public  IEnumerable<Ticket> GetAll()
+        public  IEnumerable<TicketDTO> GetAll()
         {
-            List<Ticket> tckets = _ticketRepository.GetAll();            
+            List<TicketDTO> tckets = _ticketRepository.GetAll();            
             return tckets;
            
         }

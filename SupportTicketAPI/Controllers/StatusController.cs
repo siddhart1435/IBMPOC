@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using SupportTicketAPI.Models;
+using SupportTicketAPI.Repositories;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,18 +12,24 @@ namespace SupportTicketAPI.Controllers
     [EnableCors("AngularProject")]
     public class StatusController : ControllerBase
     {
+        private IStatusRepository _statusRepository;
+        public StatusController(IStatusRepository statusRepository)
+        {
+            _statusRepository = statusRepository;
+        }
+
         // GET: api/<StatusController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Status> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _statusRepository.GetAll();
         }
 
         // GET api/<StatusController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Status Get(int id)
         {
-            return "value";
+            return _statusRepository.GetById(id);
         }
 
         // POST api/<StatusController>

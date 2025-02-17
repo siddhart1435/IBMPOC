@@ -75,12 +75,50 @@ namespace SupportTicketAPI.Repositories
             _context.SaveChangesAsync();
         }
 
-        public List<Ticket> GetAll() => _context.Ticket.ToList();
+        //public List<Ticket> GetAll() => _context.Ticket.ToList();
+
+        public List<TicketDTO> GetAll()
+        {
+            List<TicketDTO> ticketsDto = new List<TicketDTO>();
+
+            var tickets = (from user in _context.Users
+                           join tkt in _context.Ticket on user.UserId equals tkt.UserId
+                           join status in _context.Status on tkt.StatusId equals status.StatusId
+                           select new
+                           {
+                               TicketId = tkt.TicketId,
+                               UserId = tkt.UserId,
+                               UserName = user.Name,
+                               //UserEmail = user.Email,
+                               Title = tkt.Title,
+                               Description = tkt.Description,
+                               StatusId = tkt.StatusId,
+                               Status = status.StatusName,
+                               CreatedAt = tkt.CreatedAt
+                           }).ToList();
+            TicketDTO ticket = new TicketDTO();
+
+            foreach (var ticketDto in tickets)
+            {
+                ticket.TicketId = ticketDto.TicketId;
+                ticket.UserId = ticketDto.UserId;
+                ticket.UserName = ticketDto.UserName;
+                ticket.Title = ticketDto.Title;
+                ticket.Description = ticketDto.Description;
+                ticket.StatusId = ticketDto.StatusId;
+                ticket.StatusName = ticketDto.Status;
+                ticket.CreatedAt = ticketDto.CreatedAt;
+                ticketsDto.Add(ticket);
+
+            }
+            return ticketsDto;
+        }
 
         public Ticket GetById(int tciketId) => _context.Ticket.FirstOrDefault(x => x.TicketId == tciketId);
 
 
         public List<Ticket> GetByUserId(int userId) => _context.Ticket.Where(x => x.UserId == userId).ToList();
+
         
     }
 }

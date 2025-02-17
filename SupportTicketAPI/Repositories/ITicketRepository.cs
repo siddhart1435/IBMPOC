@@ -7,7 +7,7 @@ namespace SupportTicketAPI.Repositories
         public  void AddTicketAndCommentAsync(TicketCommentDTO ticketDetails);
         public void AddComment(TicketCommentDTO ticketDetails);
 
-        public List<Ticket> GetAll();
+        public List<TicketDTO> GetAll();
 
         public List<Ticket> GetByUserId(int userId);
 

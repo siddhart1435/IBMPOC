@@ -14,9 +14,11 @@ namespace SupportTicketAPI.Controllers
     public class TicketController : ControllerBase
     {
         private ITicketRepository _ticketRepository;
-        public TicketController(ITicketRepository ticketRepository)
+        private ICommentRepository _commentRepository;
+        public TicketController(ITicketRepository ticketRepository, ICommentRepository commentRepository)
         {
             _ticketRepository = ticketRepository;   
+            _commentRepository = commentRepository;
         }
 
         // GET: api/<TicketController>
@@ -42,6 +44,22 @@ namespace SupportTicketAPI.Controllers
         {
             Ticket tckets = _ticketRepository.GetById(ticketId);
             return tckets;
+
+        }
+
+        [HttpGet("GetTicketDetails/{ticketId}")]
+        public ActionResult<Ticket> GetTicketDetails(int ticketId)
+        {
+            Ticket ticket = new Ticket();
+            List<Comment> comments = new List<Comment>();
+            ticket = _ticketRepository.GetById(ticketId);
+            comments = _commentRepository.GetAllComments(ticketId);
+            if(comments.Count > 0)
+            {
+                ticket.Comments = comments;
+            }
+            
+            return ticket;
 
         }
 

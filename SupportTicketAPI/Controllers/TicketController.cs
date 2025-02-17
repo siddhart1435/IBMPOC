@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using SupportTicketAPI.Dto;
+using SupportTicketAPI.Models;
 using SupportTicketAPI.Repositories;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -20,16 +21,28 @@ namespace SupportTicketAPI.Controllers
 
         // GET: api/<TicketController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public  IEnumerable<Ticket> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            List<Ticket> tckets = _ticketRepository.GetAll();            
+            return tckets;
+           
         }
 
         // GET api/<TicketController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{userId}")]
+        public IEnumerable<Ticket> GetByUserId(int userId)
         {
-            return "value";
+            List<Ticket> tckets = _ticketRepository.GetByUserId(userId);
+            return tckets;
+
+        }
+
+        [HttpGet("GetById/{ticketId}")]
+        public ActionResult<Ticket> GetById(int ticketId)
+        {
+            Ticket tckets = _ticketRepository.GetById(ticketId);
+            return tckets;
+
         }
 
         // POST api/<TicketController>

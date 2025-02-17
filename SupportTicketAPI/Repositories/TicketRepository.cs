@@ -23,6 +23,7 @@ namespace SupportTicketAPI.Repositories
                 Description = ticketComment.Description,
                 StatusId = ticketComment.StatusId,
                 CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
 
             };
 
@@ -30,17 +31,17 @@ namespace SupportTicketAPI.Repositories
              _context.SaveChanges();  // Save changes to generate TicketId
 
             // Create a new comment associated with the ticket
-            var comment = new Comment
-            {
-                UserId = ticketComment.UserId,
-                TicketId = ticket.TicketId,
-                Content = ticketComment.Content,
-                CreatedAt = DateTime.UtcNow
+            //var comment = new Comment
+            //{
+            //    UserId = ticketComment.UserId,
+            //    TicketId = ticket.TicketId,
+            //    Content = ticketComment.Content,
+            //    CreatedAt = DateTime.UtcNow
 
-            };
+            //};
 
-            _context.Comments.Add(comment);
-             _context.SaveChanges();
+            //_context.Comments.Add(comment);
+            // _context.SaveChanges();
 
 
         }
@@ -73,5 +74,13 @@ namespace SupportTicketAPI.Repositories
             _context.Comments.Add(comment);
             _context.SaveChangesAsync();
         }
+
+        public List<Ticket> GetAll() => _context.Ticket.ToList();
+
+        public Ticket GetById(int tciketId) => _context.Ticket.FirstOrDefault(x => x.TicketId == tciketId);
+
+
+        public List<Ticket> GetByUserId(int userId) => _context.Ticket.Where(x => x.UserId == userId).ToList();
+        
     }
 }

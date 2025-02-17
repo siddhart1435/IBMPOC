@@ -9,5 +9,7 @@ namespace SupportTicketAPI.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Ticket> Ticket { get; set; }
         public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<Status> Status { get; set; }
     }
 }

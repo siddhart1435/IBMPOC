@@ -2,6 +2,7 @@
 using SupportTicketAPI.Data;
 using SupportTicketAPI.Dto;
 using SupportTicketAPI.Models;
+using System.Net.Sockets;
 
 namespace SupportTicketAPI.Repositories
 {
@@ -21,7 +22,7 @@ namespace SupportTicketAPI.Repositories
                 UserId = ticketComment.UserId,
                 Title = ticketComment.Title,
                 Description = ticketComment.Description,
-                StatusId = ticketComment.StatusId,
+                StatusId = 1,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
 
@@ -46,33 +47,44 @@ namespace SupportTicketAPI.Repositories
 
         }
 
-        public void AddTicketAndCommentAsync(TicketCommentDTO ticketComment)
+        public void AddTicketAndComment(TicketCommentDTO ticketComment)
         {
-            // Update the ticket
-            var ticket = new Ticket
+            var _ticket = _context.Ticket.FirstOrDefault(x => x.TicketId == ticketComment.TicketId);
+            if(_ticket != null)
             {
-                TicketId = ticketComment.TicketId,
-                //UserId = ticketComment.UserId,
-                StatusId = ticketComment.StatusId,
-                UpdatedAt = DateTime.UtcNow
+                //_ticket.UserId = ticketComment.UserId;
+                _ticket.StatusId = ticketComment.StatusId;
+                _ticket.UpdatedAt = DateTime.Now;
+                _context.SaveChanges();
 
-            };
 
-            _context.Ticket.Update(ticket);
-            _context.SaveChangesAsync();  // Save changes to generate TicketId
+                // Create a new comment associated with the ticket
+                var comment = new Comment
+                {
+                    UserId = ticketComment.UserId,
+                    TicketId = ticketComment.TicketId,
+                    Content = ticketComment.Content,
+                    CreatedAt = DateTime.UtcNow
 
-            // Create a new comment associated with the ticket
-            var comment = new Comment
-            {
-                UserId = ticketComment.UserId,
-                TicketId = ticket.TicketId,
-                Content = ticketComment.Content,
-                CreatedAt = DateTime.UtcNow
+                };
 
-            };
+                _context.Comments.Add(comment);
+                _context.SaveChanges();
+            }
+            //// Update the ticket
+            //var ticket = new Ticket
+            //{
+            //    TicketId = ticketComment.TicketId,
+            //    UserId = ticketComment.UserId,
+            //    StatusId = ticketComment.StatusId,
+            //    UpdatedAt = DateTime.UtcNow
 
-            _context.Comments.Add(comment);
-            _context.SaveChangesAsync();
+            //};
+
+            //_context.Ticket.Update(ticket);
+            //_context.SaveChanges();  // Save changes to generate TicketId
+
+            
         }
 
         //public List<Ticket> GetAll() => _context.Ticket.ToList();
@@ -96,10 +108,11 @@ namespace SupportTicketAPI.Repositories
                                Status = status.StatusName,
                                CreatedAt = tkt.CreatedAt
                            }).ToList();
-            TicketDTO ticket = new TicketDTO();
+            TicketDTO ticket;
 
             foreach (var ticketDto in tickets)
             {
+                ticket = new TicketDTO();
                 ticket.TicketId = ticketDto.TicketId;
                 ticket.UserId = ticketDto.UserId;
                 ticket.UserName = ticketDto.UserName;
@@ -114,7 +127,8 @@ namespace SupportTicketAPI.Repositories
             return ticketsDto;
         }
 
-        public Ticket GetById(int tciketId) => _context.Ticket.FirstOrDefault(x => x.TicketId == tciketId);
+        //public Ticket GetById(int tciketId) => _context.Ticket.FirstOrDefault(x => x.TicketId == tciketId);
+        public TicketDTO GetById(int tciketId) => GetAll().FirstOrDefault(x => x.TicketId == tciketId);
 
 
         public List<Ticket> GetByUserId(int userId) => _context.Ticket.Where(x => x.UserId == userId).ToList();

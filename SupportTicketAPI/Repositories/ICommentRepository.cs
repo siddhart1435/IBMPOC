@@ -1,9 +1,10 @@
-﻿using SupportTicketAPI.Models;
+﻿using SupportTicketAPI.Dto;
+using SupportTicketAPI.Models;
 
 namespace SupportTicketAPI.Repositories
 {
     public interface ICommentRepository
     {
-        public List<Comment> GetAllComments(int ticketId);
+        public List<CommentDTO> GetAllComments(int ticketId);
     }
 }

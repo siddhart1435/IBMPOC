@@ -40,18 +40,18 @@ namespace SupportTicketAPI.Controllers
         }
 
         [HttpGet("GetById/{ticketId}")]
-        public ActionResult<Ticket> GetById(int ticketId)
+        public ActionResult<TicketDTO> GetById(int ticketId)
         {
-            Ticket tckets = _ticketRepository.GetById(ticketId);
+            TicketDTO tckets = _ticketRepository.GetById(ticketId);
             return tckets;
 
         }
 
         [HttpGet("GetTicketDetails/{ticketId}")]
-        public ActionResult<Ticket> GetTicketDetails(int ticketId)
+        public ActionResult<TicketDTO> GetTicketDetails(int ticketId)
         {
-            Ticket ticket = new Ticket();
-            List<Comment> comments = new List<Comment>();
+            TicketDTO ticket = new TicketDTO();
+            List<CommentDTO> comments = new List<CommentDTO>();
             ticket = _ticketRepository.GetById(ticketId);
             comments = _commentRepository.GetAllComments(ticketId);
             if(comments.Count > 0)
@@ -76,9 +76,30 @@ namespace SupportTicketAPI.Controllers
         }
 
         // PUT api/<TicketController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("ticketId")]
+        public ActionResult Put(int ticketId, TicketCommentDTO tcDto)
         {
+            try
+            {
+                if (ticketId != tcDto.TicketId)
+                    return BadRequest("Ticket ID mismatch");
+
+                var ticketToUpdate = _ticketRepository.GetById(ticketId);
+
+                if (ticketToUpdate == null)
+                    return NotFound($"Ticket with Id = {ticketId} not found");
+
+                _ticketRepository.AddTicketAndComment(tcDto);
+                return NoContent();
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error updating data");
+            }
+
+            
         }
 
         // DELETE api/<TicketController>/5

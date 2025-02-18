@@ -19,6 +19,8 @@ namespace SupportTicketAPI.Dto
         public string StatusName { get; set; }
 
         public DateTime CreatedAt { get; set; }
+
+        public List<CommentDTO> Comments { get; set; }
         
 
     }

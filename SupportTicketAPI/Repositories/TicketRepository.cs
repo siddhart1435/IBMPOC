@@ -131,8 +131,8 @@ namespace SupportTicketAPI.Repositories
         public TicketDisplayDTO GetById(int tciketId) => GetAll().FirstOrDefault(x => x.TicketId == tciketId);
 
 
-        public List<Ticket> GetByUserId(int userId) => _context.Ticket.Where(x => x.UserId == userId).ToList();
+        public List<TicketDisplayDTO> GetByUserId(int userId) => GetAll().Where(x => x.UserId == userId).ToList();
 
-        
+
     }
 }

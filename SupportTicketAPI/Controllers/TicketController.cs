@@ -32,9 +32,9 @@ namespace SupportTicketAPI.Controllers
 
         // GET api/<TicketController>/5
         [HttpGet("{userId}")]
-        public IEnumerable<Ticket> GetByUserId(int userId)
+        public IEnumerable<TicketDisplayDTO> GetByUserId(int userId)
         {
-            List<Ticket> tckets = _ticketRepository.GetByUserId(userId);
+            List<TicketDisplayDTO> tckets = _ticketRepository.GetByUserId(userId);
             return tckets;
 
         }

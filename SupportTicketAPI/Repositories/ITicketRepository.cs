@@ -9,7 +9,7 @@ namespace SupportTicketAPI.Repositories
 
         public List<TicketDisplayDTO> GetAll();
 
-        public List<Ticket> GetByUserId(int userId);
+        public List<TicketDisplayDTO> GetByUserId(int userId);
 
         public TicketDisplayDTO GetById(int ticketId);
     }

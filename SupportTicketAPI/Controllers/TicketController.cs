@@ -23,9 +23,9 @@ namespace SupportTicketAPI.Controllers
 
         // GET: api/<TicketController>
         [HttpGet]
-        public  IEnumerable<TicketDTO> GetAll()
+        public  IEnumerable<TicketDisplayDTO> GetAll()
         {
-            List<TicketDTO> tckets = _ticketRepository.GetAll();            
+            List<TicketDisplayDTO> tckets = _ticketRepository.GetAll();            
             return tckets;
            
         }
@@ -40,17 +40,17 @@ namespace SupportTicketAPI.Controllers
         }
 
         [HttpGet("GetById/{ticketId}")]
-        public ActionResult<TicketDTO> GetById(int ticketId)
+        public ActionResult<TicketDisplayDTO> GetById(int ticketId)
         {
-            TicketDTO tckets = _ticketRepository.GetById(ticketId);
+            TicketDisplayDTO tckets = _ticketRepository.GetById(ticketId);
             return tckets;
 
         }
 
         [HttpGet("GetTicketDetails/{ticketId}")]
-        public ActionResult<TicketDTO> GetTicketDetails(int ticketId)
+        public ActionResult<TicketDisplayDTO> GetTicketDetails(int ticketId)
         {
-            TicketDTO ticket = new TicketDTO();
+            TicketDisplayDTO ticket = new TicketDisplayDTO();
             List<CommentDTO> comments = new List<CommentDTO>();
             ticket = _ticketRepository.GetById(ticketId);
             comments = _commentRepository.GetAllComments(ticketId);
@@ -65,11 +65,11 @@ namespace SupportTicketAPI.Controllers
 
         // POST api/<TicketController>
         [HttpPost]
-        public  ActionResult Post(TicketCommentDTO tcDto)
+        public  ActionResult Post(TicketDTO ticket)
         {
-            if (tcDto != null)
+            if (ticket != null)
             {
-                _ticketRepository.AddComment(tcDto);
+                _ticketRepository.AddTicket(ticket);
                 return NoContent();
             }
             return NotFound();

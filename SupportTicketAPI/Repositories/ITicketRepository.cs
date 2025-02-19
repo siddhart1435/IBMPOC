@@ -5,12 +5,12 @@ namespace SupportTicketAPI.Repositories
     public interface ITicketRepository
     {
         public  void AddTicketAndComment(TicketCommentDTO ticketDetails);
-        public void AddComment(TicketCommentDTO ticketDetails);
+        public void AddTicket(TicketDTO ticket);
 
-        public List<TicketDTO> GetAll();
+        public List<TicketDisplayDTO> GetAll();
 
         public List<Ticket> GetByUserId(int userId);
 
-        public TicketDTO GetById(int ticketId);
+        public TicketDisplayDTO GetById(int ticketId);
     }
 }

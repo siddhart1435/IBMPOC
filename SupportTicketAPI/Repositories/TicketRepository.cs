@@ -14,21 +14,21 @@ namespace SupportTicketAPI.Repositories
         {
             _context = context;
         }
-        public void AddComment(TicketCommentDTO ticketComment)
+        public void AddTicket(TicketDTO ticket)
         {
             // Create a new ticket
-            var ticket = new Ticket
+            var _ticket = new Ticket
             {
-                UserId = ticketComment.UserId,
-                Title = ticketComment.Title,
-                Description = ticketComment.Description,
+                UserId = ticket.UserId,
+                Title = ticket.Title,
+                Description = ticket.Description,
                 StatusId = 1,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
 
             };
 
-            _context.Ticket.Add(ticket);
+            _context.Ticket.Add(_ticket);
              _context.SaveChanges();  // Save changes to generate TicketId
 
             // Create a new comment associated with the ticket
@@ -89,9 +89,9 @@ namespace SupportTicketAPI.Repositories
 
         //public List<Ticket> GetAll() => _context.Ticket.ToList();
 
-        public List<TicketDTO> GetAll()
+        public List<TicketDisplayDTO> GetAll()
         {
-            List<TicketDTO> ticketsDto = new List<TicketDTO>();
+            List<TicketDisplayDTO> ticketsDto = new List<TicketDisplayDTO>();
 
             var tickets = (from user in _context.Users
                            join tkt in _context.Ticket on user.UserId equals tkt.UserId
@@ -108,11 +108,11 @@ namespace SupportTicketAPI.Repositories
                                Status = status.StatusName,
                                CreatedAt = tkt.CreatedAt
                            }).ToList();
-            TicketDTO ticket;
+            TicketDisplayDTO ticket;
 
             foreach (var ticketDto in tickets)
             {
-                ticket = new TicketDTO();
+                ticket = new TicketDisplayDTO();
                 ticket.TicketId = ticketDto.TicketId;
                 ticket.UserId = ticketDto.UserId;
                 ticket.UserName = ticketDto.UserName;
@@ -128,7 +128,7 @@ namespace SupportTicketAPI.Repositories
         }
 
         //public Ticket GetById(int tciketId) => _context.Ticket.FirstOrDefault(x => x.TicketId == tciketId);
-        public TicketDTO GetById(int tciketId) => GetAll().FirstOrDefault(x => x.TicketId == tciketId);
+        public TicketDisplayDTO GetById(int tciketId) => GetAll().FirstOrDefault(x => x.TicketId == tciketId);
 
 
         public List<Ticket> GetByUserId(int userId) => _context.Ticket.Where(x => x.UserId == userId).ToList();

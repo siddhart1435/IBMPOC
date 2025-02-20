@@ -26,7 +26,9 @@ namespace SupportTicketAPI.Repositories
                             UserId = comment.UserId,
                             Content = comment.Content,
                             CreatedAt = comment.CreatedAt
-                        }).OrderByDescending(x => x.CreatedAt).ToList();
+                        })
+                        .Where(y=>y.TicketId == ticketId)
+                        .OrderByDescending(x => x.CreatedAt).ToList();
 
             CommentDTO comment1 ;
             foreach (var item in coms)

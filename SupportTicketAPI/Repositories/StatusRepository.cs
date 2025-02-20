@@ -11,7 +11,7 @@ namespace SupportTicketAPI.Repositories
         {
             _context = context;
         }
-        public List<Status> GetAll() => _context.Status.ToList();
+        public List<Status> GetAll() => _context.Status.OrderBy(x=>x.StatusName).ToList();
 
 
         public Status GetById(int statusId) => _context.Status.FirstOrDefault(x => x.StatusId == statusId);

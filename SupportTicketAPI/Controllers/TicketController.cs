@@ -76,7 +76,7 @@ namespace SupportTicketAPI.Controllers
         }
 
         // PUT api/<TicketController>/5
-        [HttpPut("ticketId")]
+        [HttpPut]
         public ActionResult Put(int ticketId, TicketCommentDTO tcDto)
         {
             try
